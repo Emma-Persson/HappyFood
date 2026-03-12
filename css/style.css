@@ -1,0 +1,44 @@
+:root{
+	/* Som standard så bruger alt tekst quicksand fonten */
+	font-family: "Quicksand", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
+
+	/* fjern padding og margin som standard, tilføj igen der hvor det passer */
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: var(--bg-color);
+}
+
+h1{
+	font-family: "Gloria Hallelujah", cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 40px;
+}
+
+h2{
+	font-family: "Gloria Hallelujah", cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 40px;
+}
+
+h3{
+	font-size: 22px;
+}
+
+p{
+	font-size: 15px;
+}
+
+header{
+	nav{
+		background-color: var(--main-color);
+	}
+}
+
