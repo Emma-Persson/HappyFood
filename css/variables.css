@@ -1,0 +1,50 @@
+
+/* 
+	eksempel css, brug quicksand font family til normal tekst
+	.quicksand { 
+  	font-family: "Quicksand", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
+}*/
+
+/*
+	eksemepl css, brug Gloria Hallelujah font family til h1,h2 osv
+	.gloria {
+		font-family: "Gloria Hallelujah", cursive;
+		font-weight: 400;
+		font-style: normal;
+	}
+ */
+
+
+
+:root {
+	/* Hoved farver */
+	--bg-color: #FFFBF0;
+  --main-color: #D15353;
+  --secondary-color: #DD7E7E;
+  --text-black: #000000;
+  --text-white: #ffffff;
+
+  /* Difficulty */
+  --difficulty-easy: #2E7D32;
+  --difficulty-medium: #FFA726;
+  --difficulty-hard: #C62828;
+  
+	/* Extra */
+  --stars: #FCA333;
+  
+	/* Tema farver */
+  --europeisk-main: #EA615D;
+  --europeisk-secondary: #F5B0AE;
+  --middelhav-main: #4BA0EA;
+  --middelhav-secondary: #A5CFF5;
+  --indisk-main: #FCA333;
+  --indisk-secondary: #FDDBAF;
+
+  --asiatisk-main: #58975B;
+  --asiatisk-secondary: #ABCBAD;
+  --tropisk-main: #F6744B;
+  --tropisk-secondary: #FBB9A5;
+}
