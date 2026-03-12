@@ -1,0 +1,96 @@
+button {
+  margin: 0.3rem;
+}
+button.european {
+  border-radius: 20px;
+  border: 1px var(--european-main) solid;
+  color: var(--european-main);
+  background-color: var(--bg-color);
+}
+button.asian {
+  border-radius: 20px;
+  border: 1px var(--asian-main) solid;
+  color: var(--asian-main);
+  background-color: var(--bg-color);
+}
+button.american {
+  border-radius: 20px;
+  border: 1px var(--american-main) solid;
+  color: var(--american-main);
+  background-color: var(--bg-color);
+}
+button.mediterranean {
+  border-radius: 20px;
+  border: 1px var(--mediterranean-main) solid;
+  color: var(--mediterranean-main);
+  background-color: var(--bg-color);
+}
+button.southasian {
+  border-radius: 20px;
+  border: 1px var(--south-asian-main) solid;
+  color: var(--south-asian-main);
+  background-color: var(--bg-color);
+}
+button.easy {
+  border-radius: 20px;
+  border: 1px var(--difficulty-easy) solid;
+  color: var(--difficulty-easy);
+  background-color: var(--bg-color);
+}
+button.medium {
+  border-radius: 20px;
+  border: 1px var(--difficulty-medium) solid;
+  color: var(--difficulty-medium);
+  background-color: var(--bg-color);
+}
+button.hard {
+  border-radius: 20px;
+  border: 1px var(--difficulty-hard) solid;
+  color: var(--difficulty-hard);
+  background-color: var(--bg-color);
+}
+button.cuisine {
+  border-radius: 20px;
+  border: 1px var(--european-main) solid;
+  color: var(--european-main);
+  background-color: var(--bg-color);
+}
+button.read-more {
+  border-radius: 20px;
+  border: 1px var(--main-color) solid;
+  color: var(--main-color);
+  background-color: var(--bg-color);
+}
+button.japanese,
+button.korean,
+button.thai,
+button.vietnamese,
+button.asian {
+  border: 1px var(--asian-main) solid;
+  color: var(--asian-main);
+}
+button.italian button.french button.spanish button.european {
+  border: 1px var(--european-main) solid;
+  color: var(--european-main);
+}
+button.greek,
+button.turkish,
+button.lebanese,
+button.moroccan,
+button.mediterranean {
+  border: 1px var(--mediterranean-main) solid;
+  color: var(--mediterranean-main);
+}
+button.indian,
+button.pakistani {
+  border: 1px var(--south-asian-main) solid;
+  color: var(--south-asian-main);
+}
+button.american,
+button.mexican,
+button.brazilian,
+button.cuban,
+button.hawaiian {
+  border: 1px var(--american-main) solid;
+  color: var(--american-main);
+}

@@ -1,44 +1,93 @@
-:root{
-	/* Som standard så bruger alt tekst quicksand fonten */
-	font-family: "Quicksand", sans-serif;
-  	font-optical-sizing: auto;
-  	font-weight: 400;
-  	font-style: normal;
+:root {
+  /* Som standard så bruger alt tekst quicksand fonten */
+  /* font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; */
 
-	/* fjern padding og margin som standard, tilføj igen der hvor det passer */
-	margin: 0;
-	padding: 0;
+  /* fjern padding og margin som standard, tilføj igen der hvor det passer */
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  row-gap: 1rem;
+}
+img {
+  width: 100%;
+  height: auto;
 }
 
-body{
-	background-color: var(--bg-color);
+body {
+  background-color: var(--bg-color);
 }
 
-h1{
-	font-family: "Gloria Hallelujah", cursive;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 40px;
+h1 {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 40px;
 }
 
-h2{
-	font-family: "Gloria Hallelujah", cursive;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 40px;
+h2 {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 30px;
 }
 
-h3{
-	font-size: 22px;
+h3 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 22px;
+}
+h4 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+h5 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+}
+p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+}
+@media (min-width: 780px) {
+  h1 {
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 64px;
+  }
+
+  h2 {
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 40px;
+    font-family: "Quicksand", sans-serif;
+  }
+  h4 {
+    font-size: 32px;
+    font-family: "Quicksand", sans-serif;
+  }
+  p {
+    font-size: 24px;
+    font-family: "Quicksand", sans-serif;
+  }
 }
 
-p{
-	font-size: 15px;
+@media (min-width: 780px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+  }
 }
 
-header{
-	nav{
-		background-color: var(--main-color);
-	}
+header {
+  nav {
+    background-color: var(--main-color);
+  }
 }
-
