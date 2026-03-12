@@ -1,48 +1,52 @@
+/* eksempel css, brug quicksand font family til normal tekst */
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
-/* 
-	eksempel css, brug quicksand font family til normal tekst
-	.quicksand { 
-  	font-family: "Quicksand", sans-serif;
-  	font-optical-sizing: auto;
-  	font-weight: 400;
-  	font-style: normal;
-}*/
+/* eksemepl css, brug Gloria Hallelujah font family til h1,h2 osv */
 
-/*
-	eksemepl css, brug Gloria Hallelujah font family til h1,h2 osv
-	.gloria {
-		font-family: "Gloria Hallelujah", cursive;
-		font-weight: 400;
-		font-style: normal;
-	}
- */
+.gloria-hallelujah-regular {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quicksand-regular {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
-	/* Hoved farver */
-	--bg-color: #FFFBF0;
-  --main-color: #D15353;
-  --secondary-color: #DD7E7E;
+  /* Hoved farver */
+  --bg-color: #fffbf0;
+  --main-color: #d15353;
+  --secondary-color: #dd7e7e;
   --text-black: #000000;
   --text-white: #ffffff;
 
   /* Difficulty */
-  --difficulty-easy: #2E7D32;
-  --difficulty-medium: #FFA726;
-  --difficulty-hard: #C62828;
-  
-	/* Extra */
-  --stars: #FCA333;
-  
-	/* Tema farver */
-  --europeisk-main: #EA615D;
-  --europeisk-secondary: #F5B0AE;
-  --middelhav-main: #4BA0EA;
-  --middelhav-secondary: #A5CFF5;
-  --indisk-main: #FCA333;
-  --indisk-secondary: #FDDBAF;
+  --difficulty-easy: #2e7d32;
+  --difficulty-medium: #ffa726;
+  --difficulty-hard: #c62828;
 
-  --asiatisk-main: #58975B;
-  --asiatisk-secondary: #ABCBAD;
-  --tropisk-main: #F6744B;
-  --tropisk-secondary: #FBB9A5;
+  /* Extra */
+  --stars: #fca333;
+
+  /* Tema farver */
+  --european-main: #ea615d;
+  --european-secondary: #f5b0ae;
+  --mediterranean-main: #4ba0ea;
+  --mediterranean-secondary: #a5cff5;
+  --south-asian-main: #fca333;
+  --south-asian-secondary: #fddbaf;
+
+  --asian-main: #58975b;
+  --asian-secondary: #abcbad;
+  --american-main: #f6744b;
+  --american-secondary: #fbb9a5;
 }
