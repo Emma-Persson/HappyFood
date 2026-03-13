@@ -77,6 +77,8 @@ Dette afsnit skal liste de endpoints fra API'et i har benyttet:
 
 ### Tilføj her senere !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+kan man lave ændringer efter merge?
+
 Dette afsnit skal beskrive en funktion I selv har udviklet. Det kunne eksempelvis være en funktion der generere en listen over fx. produkter:
 
 - Beskrivelse: Hvad gør funktionen? Hvordan spiller den sammen med resten af koden?
