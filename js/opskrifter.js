@@ -40,7 +40,8 @@ function showRecipes(dataArr) {
     console.log(`${recipes.cookTimeMinutes + recipes.prepTimeMinutes}`);
   });
 
-  document.querySelector(".asian").addEventListener("click", () => filterCuisine(["Asian", "Japanese", "Korean", "Thai", "Vietnamese"]));
+  document.querySelector(".asian").addEventListener("click", () => (window.location.href = "opskrifter.html?cuisine=asian"));
+  // document.querySelector(".asian").addEventListener("click", () => filterCuisine(["Asian", "Japanese", "Korean", "Thai", "Vietnamese"]));
   document.querySelector(".european").addEventListener("click", () => filterCuisine(["Italian", "Spanish", "Russian", "French"]));
   document.querySelector(".mediterranean").addEventListener("click", () => filterCuisine(["Greek", "Turkish", "Lebanese", "Moroccan", "Mediterranean"]));
   document.querySelector(".southasian").addEventListener("click", () => filterCuisine(["Indian", "Pakistani"]));
