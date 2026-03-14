@@ -1,35 +1,79 @@
 button {
   margin: 0.3rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  padding: 6px;
 }
+.card button {
+  font-size: 14px;
+}
+@media (min-width: 780px) {
+  button {
+    font-size: 25px;
+  }
+  .card button {
+    font-size: 23px;
+  }
+  button.readMore {
+    font-size: 32px;
+  }
+}
+
 button.european {
   border-radius: 20px;
   border: 1px var(--european-main) solid;
   color: var(--european-main);
   background-color: var(--bg-color);
 }
-button.asian {
+button.european:hover,
+button.european.active {
+  background-color: var(--european-main);
+  color: var(--bg-color);
+}
+
+button.eastandsoutheastasian {
   border-radius: 20px;
   border: 1px var(--asian-main) solid;
   color: var(--asian-main);
   background-color: var(--bg-color);
 }
-button.american {
+button.eastandsoutheastasian:hover,
+button.eastandsoutheastasian.active {
+  background-color: var(--asian-main);
+  color: var(--bg-color);
+}
+button.northandlatinamerican {
   border-radius: 20px;
   border: 1px var(--american-main) solid;
   color: var(--american-main);
   background-color: var(--bg-color);
 }
-button.mediterranean {
+button.northandlatinamerican:hover,
+button.northandlatinamerican.active {
+  background-color: var(--american-main);
+  color: var(--bg-color);
+}
+button.mediterraneanandmiddleeastern {
   border-radius: 20px;
   border: 1px var(--mediterranean-main) solid;
   color: var(--mediterranean-main);
   background-color: var(--bg-color);
+}
+button.mediterraneanandmiddleeastern:hover,
+button.mediterraneanandmiddleeastern.active {
+  background-color: var(--mediterranean-main);
+  color: var(--bg-color);
 }
 button.southasian {
   border-radius: 20px;
   border: 1px var(--south-asian-main) solid;
   color: var(--south-asian-main);
   background-color: var(--bg-color);
+}
+button.southasian:hover,
+button.southasian.active {
+  background-color: var(--south-asian-main);
+  color: var(--bg-color);
 }
 button.easy {
   border-radius: 20px;
@@ -55,11 +99,18 @@ button.cuisine {
   color: var(--european-main);
   background-color: var(--bg-color);
 }
-button.read-more {
+button.readMore {
   border-radius: 20px;
   border: 1px var(--main-color) solid;
   color: var(--main-color);
   background-color: var(--bg-color);
+  font-size: 20px;
+  display: block;
+  margin: 10px auto;
+}
+button.readMore:hover {
+  background-color: var(--main-color);
+  color: var(--bg-color);
 }
 button.japanese,
 button.korean,
