@@ -56,11 +56,10 @@ function showRecipes(dataArr) {
           <img src="https://cdn.dummyjson.com/recipe-images/${recipes.id}.webp" alt="" />
           <h4>${recipes.name}</h4>
           <p>Tid: ${recipes.cookTimeMinutes + recipes.prepTimeMinutes} minutter</p>
-          <p> ${recipes.rating}<span class="yellow"> ⭑</span></p>
+          <p> ${recipes.rating}<span class="star">★</span></p>
           <div><button class="difficulty ${recipes.difficulty.toLowerCase()}">${recipes.difficulty}</button><button class="cuisine ${recipes.cuisine.toLowerCase().replace(" ", "-")}">${recipes.cuisine}</button></div>
           <button class="readMore"> <a href="enkelt_opskrift.html?id=${recipes.id}">Read More &#8594</a></button>
         </article>`;
-    console.log(`${recipes.cookTimeMinutes + recipes.prepTimeMinutes}`);
   });
 
   document.querySelector(".eastandsoutheastasian").addEventListener("click", () => (window.location.href = "opskrifter.html?cuisine=eastandsoutheastasian"));
