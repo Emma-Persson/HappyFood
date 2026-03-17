@@ -38,25 +38,35 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 	let opskrift_html = `
 		<h2 class="${cuisine_class}">${recipe.name}</h2>
-		<section>
 		<div><button class="difficulty ${recipe.difficulty.toLowerCase()}">${recipe.difficulty}</button><button class="cuisine ${recipe.cuisine.toLowerCase().replace(" ", "-")}">${recipe.cuisine}</button></div>
-		<img src="${recipe.image}" alt="${recipe.name}">
-		<div class="grid_1-1-1">
-			<p>Tid: ${recipe.prepTimeMinutes + recipe.cookTimeMinutes} min</p>
+		
+		<div class="recipe-align">
+			<section class="justify-end">
+				<img src="${recipe.image}" alt="${recipe.name}">
+			</section>
+
 			<div>
-				<p>${recipe.rating} <span class="star">★</span></p>
+				<section>
+					<div class="force_grid_1-1-1">
+						<p>Time: ${recipe.prepTimeMinutes + recipe.cookTimeMinutes} min</p>
+						<div>
+							<p>${recipe.rating} <span class="star">★</span></p>
+						</div>
+						<p>${recipe.servings} servings</p>
+					</div>
+				</section>
+
+				<section>
+					<h3 class="${cuisine_class}">Ingredients:</h3>
+					<ul class="${cuisine_class}">
+						${recipe.ingredients.map(ing => `<li>${ing}</li>`).join('')}
+					</ul>
+				</section>
 			</div>
-			<p>${recipe.servings} servings</p>
 		</div>
-		</section>
+
 		<section>
-			<h3 class="${cuisine_class}">Ingredienser:</h3>
-			<ul class="${cuisine_class}">
-				${recipe.ingredients.map(ing => `<li>${ing}</li>`).join('')}
-			</ul>
-		</section>
-		<section>
-			<h3 class="${cuisine_class}">Fremgangsmåde:</h3>
+			<h3 class="${cuisine_class}">Walkthrough:</h3>
 			<ol class="${cuisine_class}">
 				${recipe.instructions.map(inst => `<li>${inst}</li>`).join('')}
 			</ol>
